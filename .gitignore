@@ -9,5 +9,6 @@ Assembly-CSharp-Editor.csproj
 Assembly-CSharp-Editor-firstpass.csproj
 Assembly-CSharp-firstpass.csproj
 HZJFrameWork.sln
-Assets/StreamingAssets/
+/Assets/StreamingAssets/
 obj/
+Build/
