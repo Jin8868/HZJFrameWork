@@ -84,7 +84,13 @@ public class ToolsMenu
     [MenuItem("★HZJFrameWork★/生成AB资源", false, 11)]
     public static void CreateAssetBundles()
     {
-
+        string outputPath = Application.streamingAssetsPath + "/" + Application.productName;
+        if (!Directory.Exists(outputPath))
+        {
+            Directory.CreateDirectory(outputPath);
+        }
+        BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.ChunkBasedCompression, 
+            EditorUserBuildSettings.activeBuildTarget);
     }
     #endregion
 
