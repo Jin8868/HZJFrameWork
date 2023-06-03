@@ -12,6 +12,11 @@ namespace HZJFrameWork
     {
         public GameObject UIRoot;
 
+        private void Awake()
+        {
+            InitModule();
+        }
+
         // Start is called before the first frame update
         void Start()
         {
@@ -30,7 +35,11 @@ namespace HZJFrameWork
 
         }
 
-        
+        private void InitModule()
+        {
+            ResourcesModule resourcesModule = new ResourcesModule();
+            resourcesModule.LoadPrefabs("Cube");
+        }
     }
 }
 
