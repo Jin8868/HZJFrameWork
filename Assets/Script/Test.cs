@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using HZJFrameWork;
 using DG.Tweening;
+using System.Numerics;
 
 public class Test : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        LogText();
+        //LogText();
+        //BigNumber bigNumber1 = new BigNumber("123456789");
+        //BigNumber bigNumber2 = new BigNumber("987654321");
+        //BigNumber bigNumber3 = bigNumber1 * bigNumber2;
 
-        if (transform != null)
-        {
-            transform.DOScale(Vector3.one * 0.5f,1.0f).SetLoops(-1,LoopType.Yoyo);
-        }
+
+        BigNumber bigNumber4 = new BigNumber("1234567891011121314151617181920212223242526272829303132");
+        BigNumber bigNumber5 = new BigNumber("123456789");
+        BigNumber bigNumber6 = bigNumber4 * bigNumber5;
+        //HZJLog.LogWithRed($"{bigNumber1.ToString()} * {bigNumber2.ToString()} = {bigNumber3.ToString()}");
+        HZJLog.LogWithRed($"{bigNumber4.ToString()} * {bigNumber5.ToString()} = {bigNumber6.ToString()}");
     }
 
     private void LogText()

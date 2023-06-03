@@ -34,6 +34,11 @@ namespace HZJFrameWork
             OutPutLog(logWithColor);
         }
 
+        public static void LogError(params object[] log)
+        {
+            Debug.LogError(log);
+        }
+
         public static void LogWithGreen(params object[] log)
         {
             string logText = GetLogText(log);

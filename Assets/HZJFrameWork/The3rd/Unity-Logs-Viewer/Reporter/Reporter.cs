@@ -301,7 +301,7 @@ public class Reporter : MonoBehaviour
 #endif
     string systemMemorySize;
 
-    private ReporterRoot mReportRoot;
+    private HZJFrameWork.ReporterRoot mReportRoot;
 
     void Awake()
     {
