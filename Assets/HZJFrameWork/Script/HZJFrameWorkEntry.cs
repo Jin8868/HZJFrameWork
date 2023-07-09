@@ -8,9 +8,11 @@ using UnityEngine;
 
 namespace HZJFrameWork
 {
-    public class HZJFrameWorkEntry : MonoBehaviour
+    public class HZJFrameWorkEntry : MonoSingletonBase<HZJFrameWorkEntry>
     {
         public GameObject UIRoot;
+
+        private ProcedureBase procedureBase;
 
         private void Awake()
         {
@@ -26,20 +28,28 @@ namespace HZJFrameWork
                 DontDestroyOnLoad(UIRoot);
             }
             ProcedureBase logoAni = new LogoAniProcedure();
-            logoAni.OnInit();
+            procedureBase = logoAni;
         }
 
         // Update is called once per frame
         void Update()
         {
-
+            ModuleManager.I.Update();
         }
 
         private void InitModule()
         {
-            ResourcesModule resourcesModule = new ResourcesModule();
-            resourcesModule.LoadPrefabs("Cube");
+            ModuleManager.I.InitModule(ModuleManager.I.GetModule<ResourcesModule>());
         }
+
+        #region   对外接口
+
+        public void ChangeGameState(ProcedureBase procedure)
+        {
+            procedureBase = procedure;
+        }
+
+        #endregion
     }
 }
 

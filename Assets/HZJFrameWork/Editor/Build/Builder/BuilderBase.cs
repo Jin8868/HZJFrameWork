@@ -57,9 +57,10 @@ namespace HZJFrameWork
 
     public class BuilerProcess : IPostprocessBuildWithReport, IPreprocessBuildWithReport
     {
-        public int callbackOrder => throw new System.NotImplementedException();
 
         private static BuilderBase mBuiler;
+
+        int IOrderedCallback.callbackOrder => 10;
 
         public static void SetBuilder(BuilderBase builder)
         {

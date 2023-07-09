@@ -4,9 +4,6 @@
 // - CreateTime:    2023/05/01 17:33:05
 // - Description:   Ä£¿é»ùÀà
 //======================================================
-//using UnityEngine;
-//using System.Collections;
-//using System.IO;
 
 namespace HZJFrameWork
 {
@@ -18,7 +15,9 @@ namespace HZJFrameWork
 
         public abstract void Init();
 
-        
+        public abstract void Update();
+
+        public abstract void Dispose();
     }
 }
 

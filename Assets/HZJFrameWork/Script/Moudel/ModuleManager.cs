@@ -29,7 +29,17 @@ namespace HZJFrameWork
 
         }
 
-        public T GetMoudel<T>() where T: ModuleBase,new()
+        public void InitModule(ModuleBase module)
+        {
+            if (module == null)
+            {
+                return;
+            }
+            module.Init();
+            mMoudleList.Add(module);
+        }
+
+        public T GetModule<T>() where T: ModuleBase,new()
         {
             if (mMoudleList != null)
             {
@@ -40,18 +50,27 @@ namespace HZJFrameWork
                         return item as T;
                     }
                 }
-                T newModule = CreateMoudel<T>();
+                T newModule = CreateModule<T>();
                 mMoudleList.Add(newModule);
                 return newModule;
             }
             HZJLog.LogError("moduleListÎª¿Õ£¡");
-            return default(T);
+            return default;
         }
 
-        private T CreateMoudel<T>() where T : ModuleBase, new()
+        private T CreateModule<T>() where T : ModuleBase, new()
         {
             T newModule = new T();
             return newModule;
+        }
+
+        public void Update()
+        {
+            for (int i = 0;i< mMoudleList.Count;++i)
+            {
+                ModuleBase item = mMoudleList[i];
+                item.Update();
+            }
         }
     }
 }
