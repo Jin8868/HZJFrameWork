@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="DOTween">
+    <type fullname="DG.Tweening.Core.TweenerCore`3" preserve="all" />
+    <type fullname="DG.Tweening.DOTween" preserve="all" />
+    <type fullname="DG.Tweening.Plugins.Options.StringOptions" preserve="all" />
+    <type fullname="DG.Tweening.ScrambleMode" preserve="all" />
+    <type fullname="DG.Tweening.Sequence" preserve="all" />
+    <type fullname="DG.Tweening.Tween" preserve="all" />
+    <type fullname="DG.Tweening.TweenCallback" preserve="all" />
+    <type fullname="DG.Tweening.TweenSettingsExtensions" preserve="all" />
+  </assembly>
+  <assembly fullname="DOTween.Modules">
+    <type fullname="DG.Tweening.DOTweenModuleUI" preserve="all" />
+  </assembly>
+  <assembly fullname="HZJFrameWork">
+    <type fullname="HZJFrameWork.HZJLog" preserve="all" />
+    <type fullname="HZJFrameWork.ModuleManager" preserve="all" />
+    <type fullname="HZJFrameWork.ResourcesModule" preserve="all" />
+    <type fullname="HZJFrameWork.UIBase" preserve="all" />
+    <type fullname="HZJFrameWork.UIExtension" preserve="all" />
+    <type fullname="HZJFrameWork.UIMoudule" preserve="all" />
+    <type fullname="HZJFrameWorkDefine" preserve="all" />
+    <type fullname="HZJFrameWorkDefine/UIOrder" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.Component" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+	<type fullname=" UnityEngine.PhysicsModule" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI">
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+  </assembly>
+  <assembly fullname="YooAsset">
+    <type fullname="YooAsset.AssetHandle" preserve="all" />
+  </assembly>
+  <assembly fullname="mscorlib">
+    <type fullname="System.Action`1" preserve="all" />
+    <type fullname="System.Collections.Generic.List`1" preserve="all" />
+    <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
+    <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
+    <type fullname="System.Object" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.CompilerGeneratedAttribute" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
+  </assembly>
+</linker>

@@ -1,0 +1,19 @@
+{
+    "name": "HZJFrameWork",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4d1926c9df5b052469a1c63448b7609a",
+        "GUID:e34a5702dd353724aa315fb8011f08c3",
+        "GUID:72cba91e221f76a40998de5767b7ab30",
+        "GUID:803078a50e7814743b4dc09dd7edec6b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
